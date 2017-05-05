@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Southwest Finland Green Routing</title>
-
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
  <link rel="stylesheet" href="css/leaflet.css">
     <script  type="text/javascript" src="javascript/leaflet.js"></script>
 

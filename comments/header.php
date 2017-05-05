@@ -14,6 +14,6 @@
     <script src="../javascript/jquery.min.js"></script>
     <!-- Load Google Geocoder-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXIxKmHz3QFTynyL8AMUBqQNxgS2sy8d8"></script> <!-- sensor=false& -->
-
+    <link rel="shortcut icon" type="image/png" href="../favicon.png"/>
 </head>
 <body>
