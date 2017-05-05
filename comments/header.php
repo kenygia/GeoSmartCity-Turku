@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>GeosmartCity Comments</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="../css/style_comments.css"/>
     <!-- Load Leaflet from CDN-->
     <link rel="stylesheet" href="../css/leaflet.css" />
     <script src="../javascript/leaflet.js"></script>
