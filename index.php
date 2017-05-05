@@ -66,7 +66,7 @@
     <div class="logo">
         <div id="info">
 			<a onclick="infoPage()" >
-				<img src="css/images/info.png" alt="Info" id="infoPic">
+				<img src="css/images/infoicon.png" alt="Info" id="infoPic">
 			</a>
 		</div>
 		<div id="logoTitle"></div>

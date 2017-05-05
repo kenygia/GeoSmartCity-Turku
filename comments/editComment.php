@@ -6,7 +6,7 @@
         <!--Back to the comment page-->
         <div class="" id="backToComment">
             <a href="index.php">
-                <img src="css/images/comment.png" id="backToCommentpic">
+                <img src="../css/images/comment.png" id="backToCommentpic">
             </a>
         </div>
     </div>

@@ -29,7 +29,7 @@ $('#comment-page').show();
 
 var LeafIcon = L.Icon.extend({
     options: {
-        shadowUrl: 'css/images/problem.png',
+        shadowUrl: '../css/images/problem.png',
         iconSize:     [60, 58],
         shadowSize:   [60, 58],
         iconAnchor:   [30, 47],
@@ -38,10 +38,10 @@ var LeafIcon = L.Icon.extend({
     }
 });
 
-var problemIcon = new LeafIcon({iconUrl: 'css/images/problem.png'});
-var infoIcon = new LeafIcon({iconUrl: 'css/images/info.png'});
-var eventIcon = new LeafIcon({iconUrl: 'css/images/event.png'});
-var otherIcon = new LeafIcon({iconUrl: 'css/images/other.png'});
+var problemIcon = new LeafIcon({iconUrl: '../css/images/problem.png'});
+var infoIcon = new LeafIcon({iconUrl: '../css/images/info.png'});
+var eventIcon = new LeafIcon({iconUrl: '../css/images/event.png'});
+var otherIcon = new LeafIcon({iconUrl: '../css/images/other.png'});
 
 
 

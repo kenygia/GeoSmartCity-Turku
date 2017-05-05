@@ -3,7 +3,7 @@
         <!--info-->
         <div id="information">
             <a href="../doc/">
-                <img class="pull-left" src="css/images/infoicon.png" id="infoPic">
+                <img class="pull-left" src="../css/images/infoicon.png" id="infoPic">
             </a>
         </div>
         <!--Logo Title-->
@@ -12,7 +12,7 @@
         <div class="pull-right" id="routing">
             <!--Add routing page link here-->
             <a href="../">
-                <img src="css/images/infoicon.png" id="routingPic">
+                <img src="../css/images/infoicon.png" id="routingPic">
             </a>
         </div>
     </div>

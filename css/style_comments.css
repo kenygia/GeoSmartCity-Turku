@@ -185,31 +185,31 @@ button > p{
 #event{
 	height: 3vw;
 	width: 3vw;
-	background: url(images/event.png) no-repeat;
+	background: url(../css/images/event.png) no-repeat;
 	background-size: 100%;
 }
 #info{
 	height: 3vw;
 	width: 3vw;
-	background: url(images/info.png) no-repeat;
+	background: url(../css/images/info.png) no-repeat;
 	background-size: 100%;
 }
 #other{
 	height: 3vw;
 	width: 3vw;
-	background: url(images/other.png) no-repeat;
+	background: url(../css/images/other.png) no-repeat;
 	background-size: 100%;
 }
 #problem{
 	height: 3vw;
 	width: 3vw;
-	background: url(images/problem.png) no-repeat;
+	background: url(../css/images/problem.png) no-repeat;
 	background-size: 100%;
 }
 #viewAll{
 	height: 3vw;
 	width: 3vw;
-	background: url(images/all.png) no-repeat;
+	background: url(../css/images/all.png) no-repeat;
 	background-size: 100%;
 }
 #mode-info,
@@ -403,32 +403,32 @@ button > p{
 #prevBtn{
 	height: 2.2vw;
 	width: 2.2vw;
-	background: url(images/prev.png) no-repeat;
+	background: url(../css/images/prev.png) no-repeat;
 	background-size: 100%;
 }
 #editBtn{
 	height: 2.2vw;
 	width: 2.2vw;
-	background: url(images/edit.png) no-repeat;
+	background: url(../css/images/edit.png) no-repeat;
 	background-size: 100%;
 }
 #removeBtn{
 	height: 2.2vw;
 	width: 2.2vw;
-	background: url(images/remove.png) no-repeat;
+	background: url(../css/images/remove.png) no-repeat;
 	background-size: 100%;
 }
 #cancelBtn{
 	height: 2.5vw;
 	width: 2.9vw;
-	background: url(images/return_arrow.png) no-repeat;
+	background: url(../css/images/return_arrow.png) no-repeat;
 	background-size: 100%;
 	border: none;
 }
 #nextBtn{
 	height: 2.2vw;
 	width: 2.2vw;
-	background: url(images/next.png) no-repeat;
+	background: url(../css/images/next.png) no-repeat;
 	background-size: 100%;
 }
 .cancelNew{
