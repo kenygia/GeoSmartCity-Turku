@@ -1,4 +1,4 @@
-<?php include 'header.php';?>
+<?php require_once 'header.php';?>
 <!--    language btns-->
 <?php include 'widgets/languageButtom.php';?>
 <!--		<div id="preview-comment"></div>-->
@@ -11,8 +11,8 @@
     <div class="comment-header">
         <!--info-->
         <div id="information">
-            <a href="../gsc_info/?page=home&lang=en">
-                <img class="pull-left" src="images/infoicon.png" id="infoPic">
+            <a href="../doc/">
+                <img class="pull-left" src="css/images/infoicon.png" id="infoPic">
             </a>
         </div>
         <!--Logo Title-->
@@ -21,7 +21,7 @@
         <div class="pull-right" id="routing">
             <!--Add routing page link here-->
             <a href="../">
-                <img src="images/routicon.png" id="routingPic">
+                <img src="css/images/routicon.png" id="routingPic">
             </a>
         </div>
     </div>
@@ -137,4 +137,4 @@
 	<div id="commentMainPage"></div>
 	<div id="stat"></div>
 </div>
-<?php include 'footer.php';?>
+<?php require_once 'footer.php';?>

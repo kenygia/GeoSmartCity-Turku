@@ -352,7 +352,7 @@ $(document).ready(function () {
         }
     });
 
-    // Back to cgange the route (mobile screen)
+    // Back to change the route (mobile screen)
     $(".changeRoute").click(function () {
         $(".single-alternative, #mobileButtons").hide("fast");
         $(".logo, .leaflet-routing-geocoders").show("fast");

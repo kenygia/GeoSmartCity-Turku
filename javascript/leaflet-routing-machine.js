@@ -1219,21 +1219,21 @@ if (typeof module !== undefined) module.exports = polyline;
 			this._clearAlts();
 
 			this._routes = routes;
-			
+
 			speedOfWalking = $('#walkSpeedInput option:selected').val();
 			// Creating alternatives and adding them to the main alternative container
 			for (i = 0; i < this._routes.length; i++) {
 				alt = this._routes[i];
 				altDiv = this._createAlternative(alt, i);
-				
+
 				this._altContainer.appendChild(altDiv);
 				this._altElements.push(altDiv);
-				
+
 				// Resetting boolean that checks steps before bus
-				isBeforeBus = true;				
-				
+				isBeforeBus = true;
+
 				var splitted;
-				
+
 				// if Bus or P&R
 				if(departure0 != null)
 				{
@@ -1242,15 +1242,15 @@ if (typeof module !== undefined) module.exports = polyline;
 				{
 					case '1.2': distBeforeBus = distBeforeBus / 50;		// meters/min equal to 3 km/hour because distance is in meters
 					break;
-					
+
 					case '1.4': distBeforeBus = distBeforeBus / 83;		// meters/min equal to 5 km/hour
-					
+
 					break;
-					
+
 					case '1.8': distBeforeBus = distBeforeBus / 100;		// meters/min equal to 6 km/hour
-					
+
 					break;
-					
+
 					default: break;
 				}
 				if(i == 0 && departure0 != undefined)
@@ -1258,7 +1258,7 @@ if (typeof module !== undefined) module.exports = polyline;
 						splitted = departure0.split(':');
 						departure0 = +splitted[0]*60 + (+splitted[1]);
 						splitted = null;
-						
+
 						departure0 -= distBeforeBus;
 						departure0 = Math.floor(departure0 / 60) +':'+ Math.round(departure0 % 60);
 					}
@@ -1267,7 +1267,7 @@ if (typeof module !== undefined) module.exports = polyline;
 						splitted = departure1.split(':');
 						departure1 = +splitted[0]*60 + (+splitted[1]);
 						splitted = null;
-						
+
 						departure1 -= distBeforeBus;
 						departure1 = Math.floor(departure1 / 60) +':'+ Math.round(departure1 % 60);
 					}
@@ -1276,7 +1276,7 @@ if (typeof module !== undefined) module.exports = polyline;
 						splitted = departure2.split(':');
 						departure2 = +splitted[0]*60 + (+splitted[1]);
 						splitted = null;
-			
+
 						departure2 -= distBeforeBus;
 						departure2 = Math.floor(departure2 / 60) +':'+ Math.round(departure2 % 60);
 					}
@@ -1290,16 +1290,16 @@ if (typeof module !== undefined) module.exports = polyline;
 			splitted = departure0.split(':');
 			departure0 = splitted[0] + ':' + (parseInt(splitted[1])<10 ? 0 : '' ) + splitted[1];
 			splitted = null;
-			
+
 			splitted = departure1.split(':');
 			departure1 = splitted[0] + ':' + (parseInt(splitted[1])<10 ? 0 : '' ) + splitted[1];
 			splitted = null;
-			
+
 			splitted = departure2.split(':');
 			departure2 = splitted[0] + ':' + (parseInt(splitted[1])<10 ? 0 : '' ) + splitted[1];
 			splitted = null;
 			}
-			// Pushs time of bus to header of alternative			
+			// Pushs time of bus to header of alternative
 			if(departure0 != "NaN:NaN")					// checks for empty value, if assign empty will be NaN:NaN in Header
 				$("#busTime0").text(departure0);
 			if(departure1 != "NaN:NaN")
@@ -1374,10 +1374,10 @@ if (typeof module !== undefined) module.exports = polyline;
 			// Inserting date, time and mode icon to the header
 			header.innerHTML = '<div class="header-mode-img tip"><img src=' + iconBySelectedMode() + '>' +
 			'<span class="tiptext">Double click me</span>' + // Inserting Tooltip for double click
-			'</div>' +						
-			'<div class="header-text" ><span id="busTime'+ i +'"></span><h5>' + data.time + '</h5></div>';			
+			'</div>' +
+			'<div class="header-text" ><span id="busTime'+ i +'"></span><h5>' + data.time + '</h5></div>';
 			// To add distance of the route add this before </div> in previous line: <h5>' + data.distance + '</h5>
-			
+
 			// Adding tree image
 			header.appendChild(treeImageDiv);
 			// Adding tool tip for showing CO2 emission on trees hover
@@ -1389,7 +1389,7 @@ if (typeof module !== undefined) module.exports = polyline;
 			this._doubleTapHeader(header);
 			this._tapHeader(header);
 			altDiv.appendChild(this._createItineraryContainer(alt, i));
-			
+
 			return altDiv;
 		},
 
@@ -1511,7 +1511,7 @@ if (typeof module !== undefined) module.exports = polyline;
 							container.appendChild(legPanel);
 							this._addHeaderLegListeners(panelTitle, instr.index);
 							k++;
-							
+
 						}
 						// This chunk of code creates normal step instruction
 						// which will be contained after the leg title
@@ -1528,8 +1528,8 @@ if (typeof module !== undefined) module.exports = polyline;
 						}
 					}
 				}
-			}			
-			
+			}
+
 			return container;
 		},
 
@@ -1608,7 +1608,7 @@ if (typeof module !== undefined) module.exports = polyline;
 
 		/**
 		 * Double touch on the header opens detailed
-		 * instructions for this alternative. Created 
+		 * instructions for this alternative. Created
 		 * with Hammer.js using Manager for custom events
 		 * @param header
          * @private
@@ -1621,23 +1621,23 @@ if (typeof module !== undefined) module.exports = polyline;
 			// conditions for recognizing
 			hammer.get('doubletap').recognizeWith('singletap');
 			hammer.get('singletap').requireFailure('doubletap');
-			
+
 			hammer.on("doubletap", function(){
 				$(".single-alternative.leaflet-routing-alt-minimized, .now-later").hide();
 				$(".single-alternative .panel-group").show("slow");
-			
+
 			});
-			
+
 		 },
-		
+
 		/**
 		 * Single touch on the header closes detailed
-		 * instructions for this alternative.Created 
+		 * instructions for this alternative.Created
 		 * with Hammer.js using Manager for custom events
 		 * @param header
          * @private
          */
-		  _tapHeader: function(header){			 
+		  _tapHeader: function(header){
 			var hammer = new Hammer.Manager(header);
 			// create new events
 			hammer.add( new Hammer.Tap({ event: 'doubletap', taps: 2 }) );
@@ -1645,17 +1645,17 @@ if (typeof module !== undefined) module.exports = polyline;
 			// conditions for recognizing
 			hammer.get('doubletap').recognizeWith('singletap');
 			hammer.get('singletap').requireFailure('doubletap');
-			
+
 			hammer.on("singletap", function(){
-					
+
 				$(".single-alternative .panel-group").hide("fast");
 				$(".single-alternative.leaflet-routing-alt-minimized").show();
-				
+
 			});
-			
-			
-		  }, 
-		
+
+
+		  },
+
 		/**
 		 * Function for selecting the route by clicking on the alternative
 		 * @param e
@@ -1712,7 +1712,7 @@ if (typeof module !== undefined) module.exports = polyline;
 			}
 			this.fire('routeselected', routes);
 		}
-		
+
 	});
 
 	L.Routing.itinerary = function(options) {
@@ -1789,24 +1789,24 @@ if (typeof module !== undefined) module.exports = polyline;
 			header.innerHTML = icon;
 			header.appendChild(document.createTextNode(' № ' + busNumber));
 			header.appendChild(document.createTextNode(' | ' + stopID + ' - ' + text + ' | '));
-			header.appendChild(document.createTextNode(time));	
-			
+			header.appendChild(document.createTextNode(time));
+
 			if(i)
 			{
-				
+
 				if (departure0 == null)
-				{			
-					departure0 = time ;					
+				{
+					departure0 = time ;
 				}
 				else if (departure1 == null)
-				{				
-					departure1 = time ;					
+				{
+					departure1 = time ;
 				}
 				else if (departure2 == null)
-				{				
+				{
 					departure2 = time ;
 				}
-				
+
 			}
 
 			return panelTitle;
@@ -1828,7 +1828,7 @@ if (typeof module !== undefined) module.exports = polyline;
 			stepDistance.appendChild(document.createTextNode(distance));
 			if(isBeforeBus)
 			distBeforeBus += parseInt(distance, 10);
-			
+
 			return step;
 		},
 
@@ -1838,9 +1838,9 @@ if (typeof module !== undefined) module.exports = polyline;
 				busStopTime = L.DomUtil.create('li', 'stepInline', step);
 			busStopName.appendChild(document.createTextNode(stopID + ' - ' + stopName));
 			busStopTime.appendChild(document.createTextNode(time));
-			
+
 			isBeforeBus = false;
-			
+
 			return step;
 		}
 	});
@@ -1912,7 +1912,7 @@ if (typeof module !== undefined) module.exports = polyline;
 				else {
 						this.options.styles[2]["color"] = "yellow";
 					}
-				
+
 				this._addSegment(
 					route.coordinates[j],
 					this.options.styles,
@@ -1964,7 +1964,7 @@ if (typeof module !== undefined) module.exports = polyline;
 			    i, j,
 			    wpLatLng,
 			    routeCoord;
-				
+
 			for (j = 0; j < this._route.coordinates.length; j++) {
 			for (i = 0; i < wps.length; i++) {
 //				wpLatLng = wps[i].latLng;
@@ -2065,7 +2065,7 @@ if (typeof module !== undefined) module.exports = polyline;
 					['Turn slightly left', ' onto {road}'],
 				'CIRCLE_CLOCKWISE':
 					['Turn clockwise', ' onto {road}'],
-				'CIRCLE_COUNTERCLOCKWISE': 
+				'CIRCLE_COUNTERCLOCKWISE':
 					['Turn counterclockwise', ' onto {road}'],
 				'UTURN_LEFT':
 					['Make a U-turn to the left'],
@@ -2497,7 +2497,7 @@ if (typeof module !== undefined) module.exports = polyline;
 (function (global){
 (function() {
 	'use strict';
-	
+
 	var L = (typeof window !== "undefined" ? window.L : typeof global !== "undefined" ? global.L : null),
 		corslite = require('corslite'),
 		polyline = require('polyline');
@@ -2512,7 +2512,8 @@ if (typeof module !== undefined) module.exports = polyline;
 	L.Routing.OSRM = L.Class.extend({
 		options: {
 			// serviceUrl: 'http://hub.geosmartcity.eu/otp/routers/default/plan',
-			serviceUrl: 'http://gis.dc.turkuamk.fi:8080/otp/routers/default/plan',
+			//	serviceUrl: 'http://gis.dc.turkuamk.fi:8080/otp/routers/default/plan',
+			serviceUrl: 'http://localhost:8080/otp/routers/default/plan',
 			timeout: 30 * 1000,
 			routingOptions: {}
 		},
@@ -2561,14 +2562,14 @@ if (typeof module !== undefined) module.exports = polyline;
 
 					if (!err) {
 						try {
-							
-							
-							
+
+
+
 								data = JSON.parse(resp.responseText); // for all browers except FireFox
-							
-							
+
+
 							try {
-								
+
 								return this._routeDone(data, wps, callback, context);
 							} catch (ex) {
 								statusCode = -3;
@@ -2629,12 +2630,12 @@ if (typeof module !== undefined) module.exports = polyline;
 
 				// speed = response["plan"]["itineraries"][itinerary]["legs"][0]["distance"] / response["plan"]["itineraries"][itinerary]["legs"][0]["duration"];
 				var currentLeg = response["plan"]["itineraries"][itinerary]["legs"];
-				
+
 				// Calculating total distance
 				for (leg = 0; leg < currentLeg.length; leg++) {
 					totalDistance += currentLeg[leg]["distance"];
 				}
-				
+
 				// Loop for each leg inside the itinerary
 				for (leg = 0; leg < currentLeg.length; leg++) {
 					coordinates.push(this._decodePolyline(currentLeg[leg]["legGeometry"]["points"]));
@@ -2800,12 +2801,12 @@ if (typeof module !== undefined) module.exports = polyline;
 
 			var dateString, timeString, d, t;
 			var arriveBy = false;
-			
+
 			// Turns on arrive by mode
 			if ($(".time-options").find("input[value='Arrival']").prop("checked")) {
 				arriveBy = true;
 			}
-			
+
 			if ($(".time-options").find("input[value='Now']").prop("checked")){
 				d = new Date();
 				t = new Date();
@@ -2822,12 +2823,12 @@ if (typeof module !== undefined) module.exports = polyline;
 			var	walkSpeed = $('#walkSpeedInput option:selected').val();
 			var bikeSpeed = $('#bikeSpeedInput option:selected').val();
 			var walkDistance = $('#walkDistInput').val();
-			
+
 			if(walkDistance < 100 || walkDistance == null){
 				walkDistance = "100";
 				$('#walkDistInput').val(100);
 			}
-			
+
 			return this.options.serviceUrl + '?' + "fromPlace=" + waypoints[0]["latLng"]["lat"] + "%2C" + waypoints[0]["latLng"]["lng"] + "&toPlace=" + waypoints[1]["latLng"]["lat"] + "%2C" + waypoints[1]["latLng"]["lng"] +
 				"&time=" + timeString + "&date=" + dateString + "&arriveBy=" + arriveBy + "&mode=" + selectedMode +
 				"&showIntermediateStops=" + true + "&walkSpeed=" + walkSpeed + "&bikeSpeed=" + bikeSpeed + "&maxWalkDistance=" + walkDistance;
@@ -3306,7 +3307,7 @@ if (typeof module !== undefined) module.exports = polyline;
 		});
 
 	L.Routing.waypoint = function(latLng, name, options) {
-		
+
 		return new L.Routing.Waypoint(latLng, name, options);
 	};
 
@@ -3316,6 +3317,3 @@ if (typeof module !== undefined) module.exports = polyline;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}]},{},[4])(4)
 });
-
-
-

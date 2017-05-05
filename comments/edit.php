@@ -2,8 +2,8 @@
     <div class="col-sm-12 comment-header">
         <!--info-->
         <div id="information">
-            <a href="http://geosmartcity.dc.turkuamk.fi/?page=home&lang=en">
-                <img class="pull-left" src="images/infoicon.png" id="infoPic">
+            <a href="../doc/">
+                <img class="pull-left" src="css/images/infoicon.png" id="infoPic">
             </a>
         </div>
         <!--Logo Title-->
@@ -11,8 +11,8 @@
         <!--comment-->
         <div class="pull-right" id="routing">
             <!--Add routing page link here-->
-            <a href="http://geosmartcity.dc.turkuamk.fi/?page=home&lang=en">
-                <img src="images/infoicon.png" id="routingPic">
+            <a href="../">
+                <img src="css/images/infoicon.png" id="routingPic">
             </a>
         </div>
     </div>
@@ -32,5 +32,3 @@
         <div id="commentContentTab"></div>
     </div>
 </div>
-
-

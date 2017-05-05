@@ -21,7 +21,7 @@ $(function() {
         else if ($(this).attr("href") != pageUrl) {
             $('#FI').addClass("hide");
         }
-    })
+    });
 });
 
 
@@ -36,7 +36,9 @@ function setRoutingLanguage(){
         return 'en';
     else if (pageUrl === "?lang=sv")
         return 'sv';
-    else if (pageUrl === "")
+    /*else if (pageUrl === "?lang=fi")
+        return 'fi';*/
+    else
         return 'fi';
 }
 
@@ -47,15 +49,15 @@ function setRoutingLanguage(){
  */
 function infoPage(){
 	var lang = setRoutingLanguage();
-	
+
 	if(lang === "fi")
-		window.location = "http://gis.dc.turkuamk.fi/gsc_info/?page=home&lang=fi";
+		window.location = "http://localhost/doc/?page=home&lang=fi";
 	if(lang === "en")
-		window.location = "http://gis.dc.turkuamk.fi/gsc_info/?page=home&lang=en";
+		window.location = "http://localhost/doc/?page=home&lang=en";
 	if(lang === "sv")
-		window.location = "http://gis.dc.turkuamk.fi/gsc_info/?page=home&lang=sw";
+		window.location = "hhttp://localhost/doc/?page=home&lang=sw";
 }
- 
+
 
 /**
  * Three language objects with the properties: "propertyName" : "language equivalent"
@@ -182,7 +184,9 @@ $(function() {
         lng = 'en';
     else if (pageUrl === "?lang=sv")
         lng = 'sv';
-    else if (pageUrl === "")
+    /*else if (pageUrl === "fi")
+        lng = 'fi';*/
+    else
         lng = 'fi';
 
     $('#logoTitle').html(lang[lng]['TITLE']);
