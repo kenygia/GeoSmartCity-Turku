@@ -11,7 +11,7 @@
     <div class="comment-header">
         <!--info-->
         <div id="information">
-            <a href="http://geosmartcity.dc.turkuamk.fi/?page=home&lang=en">
+            <a href="../gsc_info/?page=home&lang=en">
                 <img class="pull-left" src="images/infoicon.png" id="infoPic">
             </a>
         </div>
@@ -20,7 +20,7 @@
         <!--comment-->
         <div class="pull-right" id="routing">
             <!--Add routing page link here-->
-            <a href="http://gis.dc.turkuamk.fi/">
+            <a href="../">
                 <img src="images/routicon.png" id="routingPic">
             </a>
         </div>

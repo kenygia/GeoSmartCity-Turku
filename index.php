@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html"> 
 <head>
     <meta charset="UTF-8">
     <title>Southwest Finland Green Routing</title>
@@ -7,10 +7,10 @@
  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
-    <script src="js/Control.Geocoder.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
+    <script src="javascript/Control.Geocoder.js"></script>
+    <script type="text/javascript" src="javascript/map.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
+	
 	<script src="http://hammerjs.github.io/dist/hammer.js"></script>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -29,8 +29,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/leaflet-routing-machine.js"></script>
-
+    <script src="javascript/leaflet-routing-machine.js"></script>
+	
 	<!--	Google Analytics-->
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -71,9 +71,9 @@
 		</div>
 		<div id="logoTitle"></div>
 		<div id="comment">
-			<a href="comments/">
+			<a href="./comments/">
 				<img src="css/images/comment.png" alt="Comment" id="commentPic">
-			</a>
+			</a>		
 		</div>
         <div id="modeListBoxSelect">
             <div id="walk" class="walkIconClicked"></div>
