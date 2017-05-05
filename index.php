@@ -1,36 +1,63 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html"> 
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Southwest Finland Green Routing</title>
-
- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
-    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+<?php /**
+ <link rel="stylesheet" href="css/leaflet.css">
+    <script  type="text/javascript" src="javascript/leaflet.js"></script>
 
     <script src="javascript/Control.Geocoder.js"></script>
     <script type="text/javascript" src="javascript/map.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	
-	<script src="http://hammerjs.github.io/dist/hammer.js"></script>
+    <script  type="text/javascript" src="javascript/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script  type="text/javascript" src="javascript/hammer.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script  type="text/javascript" src="javascript/bootstrap.min.js"></script>
 
 <!--    j-Query UI-->
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.min.css">
+    <script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.timepicker.min.js"></script>
 
     <script src="javascript/lang.js"></script>
     <script src="javascript/additionalFunctions.js"></script>
 
     <!--    CSS-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="javascript/leaflet-routing-machine.js"></script>
-	
+*/?>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
+   <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+   <script src="javascript/Control.Geocoder.js"></script>
+   <script type="text/javascript" src="javascript/map.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+ <script src="http://hammerjs.github.io/dist/hammer.js"></script>
+
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--    j-Query UI-->
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+   <script src="javascript/lang.js"></script>
+   <script src="javascript/additionalFunctions.js"></script>
+
+   <!--    CSS-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+   <script src="javascript/leaflet-routing-machine.js"></script>
 	<!--	Google Analytics-->
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -73,7 +100,7 @@
 		<div id="comment">
 			<a href="./comments/">
 				<img src="css/images/comment.png" alt="Comment" id="commentPic">
-			</a>		
+			</a>
 		</div>
         <div id="modeListBoxSelect">
             <div id="walk" class="walkIconClicked"></div>
