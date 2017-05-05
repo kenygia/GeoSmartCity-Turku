@@ -1,0 +1,40 @@
+@media (max-width: 780px) {
+body{
+	
+	min-width: 640px;
+	font-size: 15px;
+}
+#content{
+	width: 100%;
+}
+#heading{
+	color:#000F6E;
+	font-size:20px;
+	line-height:32px;
+	text-align:left;
+	
+}
+
+.heading1{
+	color:#000F6E;
+	font-size:20px;
+	line-height:32px;
+	text-align: left;
+	
+}
+span{
+font-weight:bold;
+font-size:15px;
+color:#232324;
+line-height: 20px;
+}
+
+.link_article{
+	font-size: 12px;
+}
+.link_right{
+	font-size: 14px;
+}
+	
+}
+

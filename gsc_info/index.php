@@ -1,0 +1,9 @@
+<?php
+include("init.php");
+include("pages/head.php");
+include("pages/header.php");
+include("pages/nav.php");
+include("pages/section.php");
+include("pages/aside.php");
+include("pages/footer.php");
+?>

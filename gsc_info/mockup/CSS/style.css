@@ -1,0 +1,1168 @@
+*{
+    padding:0px;
+    margin:0px;
+    border: 0px;
+}
+body{
+   background-image: url("../images/church3.jpg");
+    /* background-image: url("../images/museum.jpg");*/
+    width:100%;
+    min-width: 1130px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    z-index: -100;
+
+
+
+
+}
+
+
+
+header{
+    height:80px;
+    width:100%;
+    /*min-width: 1320px;*/
+    background: white;
+    opacity: .7;
+}
+#logo_gsc img{
+    height:70px;
+    width: 120px;
+    float:left;
+    margin-left:50px;
+}
+#logo_cip img{
+    height:70px;
+    width: 100px;
+    float:right;
+    margin-right:50px;
+}
+
+
+
+aside{
+    float:left;
+     width:29%;
+	
+
+}
+form{
+    margin-top:20px;
+    margin-left:3%;
+}
+form label{
+    font-size: 16px;
+    font-family: sans-serif;
+    color:white;
+}
+form input[type=text],select{
+    height:25px;
+    margin:3px;
+    border: 1px solid white;
+    border-radius: 2px;
+    width:307px;
+}
+form input[type=number]{
+    height:25px;
+    margin:3px;
+    border: 1px solid white;
+    border-radius: 2px;
+    width:137px;
+}
+form input[type=password]{
+    height:25px;
+    margin:3px;
+    border: 1px solid white;
+    border-radius: 2px;
+    width:250px;
+}
+form input[type=submit]{
+    color:black;
+    font-weight: bold;
+}
+
+#time{
+    width:310px;
+    height:25px;
+    text-align:center;
+    margin-top:10px;
+    color:white;
+    font-weight:bold;
+}
+#now{
+    width:155px;
+    background: #50C347;
+    float:left;
+    height:25px;
+    padding-top:5px;
+}
+#later{
+    width:155px;
+    background: #8E8E8E;
+    float:right;
+    height:25px;
+    padding-top:5px;
+}
+#field_time{
+    margin-top: 20px;
+    display: none;
+}
+#field_time input[type=text]
+{
+    background-image:url("../images/calendar.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: right;
+    width:195px;
+
+
+}
+#field_time input[type=datetime]{
+    height:24px;
+    width:100px;
+    float:left;
+    padding-left:2px;
+    margin-top:2px;
+}
+
+#later{
+    width:50%;
+    background: #8E8E8E;
+    float:right;
+    height:25px;
+    padding-top:5px;
+
+
+}
+form input[type=submit]{
+    -webkit-border-radius: 2px;
+    height:32px;
+    padding:0px 15px;
+    margin-top:10px;
+    width:310px;
+    border: 1px solid #9FB6BD;
+    border-radius: 2px;
+}
+
+#preference{
+
+    margin-top:15px;
+
+}
+#preference:hover{
+    cursor: pointer;
+}
+
+#preference p{
+    padding:8px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #E6E1E1;
+    border-radius: 2px;
+    color:black;
+    width:80px;
+}
+
+
+/*The page section*/
+#indexpage_section{
+
+    float:left;
+    width: 70%;
+    color:white;
+    margin: 0px auto;
+    }
+#log {
+
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    background: green;
+
+
+}
+#log_info{
+    float:right;
+    text-align: center;
+}
+#log img{
+    height:30px;
+    width:30px;
+    margin-right:0px;
+    margin-top: 5px;
+    background:#CBCACA;
+    border-radius: 50%;
+
+}
+#log label{
+
+    color:white;
+    margin-right: 0px;
+    background: #50C347;
+    padding:4px;
+    border-radius: 2px;
+
+
+}
+#content{
+    clear:both;
+    text-align: center;
+    }
+
+#front_section h1{
+    color:white;
+    font-family: serif;
+    font-size: 40px;
+    /*text-shadow: 1px 1px 2px #5981E1;*/
+}
+#front_section p{
+    font-size: 17px;
+    color:white;
+    font-family: sans-serif;
+}
+#index{
+    /*text-align: center;*/
+    width:90%;
+    margin:0px auto;
+}
+#index h3{
+    font-size:30px;
+    color:#50C347;
+    font-weight:bold;
+    margin-top:15px;
+    text-shadow: 1px 1px 2px black;
+}
+#index p{
+    font-size: 17px;
+    color:white;
+    font-family: sans-serif;
+}
+
+#index_left{
+
+}
+#index_right{
+    text-align: center;
+    float: left;
+
+}
+
+#index_right p{
+    text-align: justify;
+    line-height: 22px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+#index_rightimg{
+    padding:10px;
+    background: #F5EE26;
+    width:380px;
+    opacity: .7;
+    margin-left: 40px;
+   border-radius: 8px 8px 0px 0px;
+}
+#index_rightimg img{
+    margin-right: 30px;
+
+ }
+
+#index_rightinfo{
+    padding:25px;
+    background: #514D4D;
+    border-radius: 0px 0px 8px 8px;
+    width:350px;
+    opacity: .8;
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: 40px;
+}
+
+#tree_info{
+float: left;
+}
+
+#tree_infoimg{
+    padding:10px;
+    background: #F5EE26;
+    width:430px;
+    opacity: .7;
+    margin-left: 40px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+#tree_infoimg img{
+    height:35px;
+    width: 35px;
+    margin-right: 30px;
+ }
+
+#tree_infomessage{
+    padding:25px;
+    background: #514D4D;
+    border-radius: 0px 0px 8px 8px;
+    width:400px;
+    opacity: .8;
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: 40px;
+}
+#tree_infomessage p{
+    text-align: justify;
+    line-height: 22px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+#multiplat{
+    text-align: center;
+
+}
+#multiplat span{
+    font-size: 17px;
+    color:white;
+    font-family: sans-serif;
+}
+#multiplat img{
+    height:100px;
+    width:200px;
+}
+#multiplat p{
+    padding:12px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: #50C347;
+    border-radius: 12px 12px 0px 0px;
+    color:white;
+    width:150px;
+    position: relative;
+    left:40%;
+    margin-top:10px;
+    margin-bottom: 10px;
+
+}
+#multiplat a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+
+}
+
+#register p{
+    padding:12px;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    position: relative;
+    right:5%;
+    top:0%;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#log a{
+    text-decoration: none;
+}
+#log a:hover label{
+   cursor: pointer;
+}
+
+/*User accout page*/
+#useraccount_section{
+    margin:30px;
+    color:white;
+   }
+#info{
+    padding:15px;
+    background: #514D4D;
+    opacity: .8;
+    border-radius: 8px;
+    width:300px;
+    float:left;
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: 120px;
+}
+#info h1{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+#info span{
+    font-size: 14px;
+}
+.info_text img{
+    height:30px;
+    width:30px;
+}
+.info_text {
+    font-family: sans-serif;
+    font-size:18px;
+    margin-top: 25px;
+
+}
+hr{
+    margin: 10px 0px;
+    width:100%;
+    height:1px;
+    background:white;
+}
+#loginform{
+    float:left;
+    margin-left: 200px;
+}
+.signin{
+    background: #514D4D;
+    padding:20px;
+    width:300px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.signin span{
+    font-size: 14px;
+}
+.signin form input[type=text]{
+    height:25px;
+    margin:3px;
+    border: 1px solid white;
+    border-radius: 2px;
+    width:200px;
+    background: white;
+    padding-left:10px;
+
+}
+.signin form input[type=password]{
+    height:25px;
+    margin:3px;
+    border: 1px solid white;
+    border-radius: 2px;
+    width:200px;
+    padding-left:10px;
+}
+.signin form input[type=submit]{
+    border-radius: 2px;
+    height:28px;
+    padding:0px 15px;
+    margin-top:10px;
+    width:210px;
+    margin-left:20px;
+    border: 1px solid #9FB6BD;
+
+}
+
+
+/*........................................Logout pop up section*...............................................*/
+#logout_popup{
+    position: fixed;
+    width:250px;
+    background: white;
+    color:black;
+    border-radius: 4px;
+    top:120px;
+    right:10px;
+    padding:4px;
+    display: none;
+}
+#logout_popup h3{
+    background: #4EADE5;
+    padding:5px 0px;
+}
+
+#logout_popup p{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #4A4848;
+    line-height: 15px;
+    margin: 10px 0px;
+    font-weight: normal;
+    text-align: center;
+    padding:4px;
+}
+#cancel{
+    background: #B0B0B5;
+    float:left;
+    width:48%;
+    text-align: center;
+    padding:5px 0px;
+    }
+#signout{
+    float:right;
+    width:48%;
+    text-align: center;
+    padding:5px 0px;
+    background: #B0B0B5;
+}
+
+/*-------------------------------------------userpreference--------------------------------------*/
+#preference{
+    margin-left:3%;
+    margin-top:15px;
+
+}
+#preference:hover{
+    cursor: pointer;
+}
+
+#preference p{
+    padding:8px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #E6E1E1;
+    border-radius: 2px;
+    color:black;
+    width:22%;
+}
+
+#userpreference{
+    width: 78%;
+    min-width: 310px;
+    font-size: 16px;
+    font-family: sans-serif;
+    padding:2%;
+    margin-left: 1%;
+    border-radius: 5px;
+    background: #514D4D;
+    display: none;
+    color:white;
+}
+
+#userpreference select{
+    height:22px;
+    width:83px;
+    float:right;
+
+}
+#userpreference input[type=number],#userpreference input[type=text]{
+    height:22px;
+    width:83px;
+    float:right;
+
+
+}
+#save_button{
+    background: none;
+    background-image: url("../images/save.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 25px 25px;
+    height:30px ;
+    width: 30px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    }
+
+#share_button{
+  background: none;
+    background-image: url("../images/sharing.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-size: 25px 25px;
+    width: 30px;
+    height:30px ;
+    margin-bottom: 20px;
+}
+#save_button:hover{
+   cursor: pointer;
+}
+.saveshare:hover{
+    cursor: pointer;
+}
+
+.refe_lebel{
+    margin-bottom:12px;
+}
+#vehicle_type{
+    display: none;
+}
+
+fieldset{
+    border: 1px dotted beige;
+    padding: 10px;
+    margin-bottom: 10px;
+
+
+}
+legend{
+    background: #50C347;
+    padding: 5px;
+    border-radius: 2px;
+}
+#saving_fieldset{
+    padding: 0px;
+}
+/*--------------------------------------------the preference pop up----------------------------------------*/
+/*The pop up dialog box*/
+#pop-up{
+    width:100%;
+    height:100%;
+    position: fixed;
+    opacity: .9;
+    background:#6d84b4;
+    z-index: 1000;
+    top:0px;
+    left: 0px;
+    display: none;
+}
+
+#dialogbox{
+    width:300px;
+    background: #fefefe;
+    position: fixed;
+    top:55%;
+    left:2%;
+    border-radius: 5px;
+
+}
+#heading{
+
+    text-align: center;
+    background:#50C347;
+    padding:1px;
+    line-height:25px;
+    font-size:19px;
+    font-weight:bold;
+    margin-bottom: 15px;
+    border-radius: 5px 5px 0px  0px;
+}
+#dialog{
+    padding:10px;
+    font-size: 18px;
+}
+
+#pop-up button{
+    height:25px;
+    width:46%;
+    margin:1%;
+    margin-top:10px;
+    background:#50C347;
+    border-radius: 2px;
+}
+/*-----------------------------------the saved success message-------------------*/
+#success_message{
+    position: fixed;
+    width:250px;
+    background: white;
+    color:black;
+    border-radius: 4px;
+    top:0px;
+    right:40%;
+    padding:4px;
+    text-align: center;
+
+}
+#successmessage_heading h3{
+    background: #4EADE5;
+    padding:5px 0px;
+}
+
+#success_dialog p{
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #4A4848;
+    line-height: 15px;
+    margin: 10px 0px;
+    font-weight: normal;
+    text-align: center;
+    padding:4px;
+}
+#close{
+    background: #B0B0B5;
+    width:48%;
+    text-align: center;
+    padding:5px 0px;
+}
+
+/*------------------------------------------------GreenRouting page head-----------------------------------------------------*/
+#green_routing{
+    clear:both;
+    font-family: sans-serif;
+      }
+
+
+#green_routing_heading{
+    float:left;
+}
+#green_routing h2{
+    color: #50C347;
+    font-size: 35px;
+}
+#route_search{
+    float:left;
+    /*background: #EDFCEA;*/
+   /* color: #4A4848;*/
+     margin-top: 40px;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    /*width: 95%;*/
+    border-radius: 10px 10px 0px 0px;
+}
+#search_info{
+    padding: 10px;
+    float:left;
+    margin-right:200px;
+}
+#weather{
+    float: right;
+    text-align: center;
+}
+/*......................................................Menu of the page................................................*/
+#search_menu{
+    clear: both;
+    text-align: center;
+    opacity: .8;
+    background: white;
+    float: left;
+    margin:0px  0px 0px 35%;
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+       }
+#search_menu  img{
+    width:20px;
+    height:20px;
+    margin-top: 10px;
+}
+
+#search_menu ul li {
+    list-style: none;
+    padding:3px 20px;
+    display: inline-block;
+
+   }
+
+
+.current{
+background:#95DA58;
+
+}
+
+/*..........................................the journey section....................................................*/
+#journey_title{
+    clear: both;
+    width:95%;
+    background: black;
+
+}
+#map_route_title{
+    float:left;
+    height:20px;
+    background:#DCE161;
+    opacity: .8;
+   font-weight: bold;
+    /*width:60px;*/
+    width:10%;
+    margin-right: 1%;
+    text-align: center;
+    color:black;
+    padding-top:5px;
+    border-radius: 5px 0px 0px 0px;
+}
+#map_route_route{
+    float: left;
+    background:#DCE161;
+    opacity: .8;
+    font-weight: bold;
+    /* width:500px;*/
+    width: 58%;
+    margin-right: 1%;
+    color:black;
+    height:20px;
+    padding-top:5px;
+    text-align:center;
+}
+.journey_menu{
+    float:left;
+    height:20px;
+    background:#DCE161;
+    font-weight: bold;
+    opacity: .8;
+    width: 9%;
+    margin-right: 1%;
+    color:black;
+    padding-top:5px;
+    text-align: center;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.journery{
+    clear: both;
+    float: left;
+    width: 95%;
+    margin-top: 10px;
+}
+.journey_head {
+    text-align: center;
+    background: #EDFCEA;
+    border-radius: 20px 20px 0px 0px;
+    color: #4A4848;
+}
+.journey_head img{
+    height:25px;
+    width:25px;
+    margin-top: 7px;
+}
+
+.journery_detail{
+    width: 100%;
+    margin-top: 3px;
+
+}
+.map_icon{
+    float:left;
+    height:90px;
+    margin-right: 1%;
+    background:#EDFCEA;
+    /*width:60px;*/
+    width:10%;
+    text-align: center;
+    color:#4A4848;
+}
+
+.map_icon:hover{
+    background: #95DA58;
+    border-radius: 50%;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.map_route{
+    float: left;
+    margin-right: 1%;
+    background:#EDFCEA;
+   /* width:500px;*/
+    width: 58%;
+    text-align: center;
+}
+
+.distance{
+    float:left;
+    height:70px;
+    margin-right: 1%;
+    background:#EDFCEA;
+   /* width:80px;*/
+    width: 10%;
+    color:#4A4848;
+    padding-top:20px;
+    text-align: center;
+}
+.duration{
+    float:left;
+    height:70px;
+    margin-right: 1%;
+    background:#EDFCEA;
+    width: 9%;
+    color:#4A4848;
+    padding-top:20px;
+    text-align: center;
+}
+.walking{
+    float:left;
+    height:70px;
+    background:#EDFCEA;
+    width: 9%;
+    color:#4A4848;
+    padding-top:20px;
+    text-align: center;
+}
+#popup_map{
+    position: fixed;
+    width: 800px;
+    height: 400px;
+    background:white;
+    color: #4A4848;
+    top:30%;
+    left:28%;
+    border: 6px solid #9185DF;
+    display: none;
+    text-align: center;
+    border-radius: 5px;
+}
+#cross{
+    position:absolute;
+   left:-10px;
+    top:-10px;
+}
+/*..............................................................table.............................................*/
+
+#parkingarea {
+    width: 95%;
+    clear: both;
+    text-align: center;
+    position: relative;
+    height: 300px;
+    margin-top: 50px;
+}
+
+#parkingarea_img{
+    height:300px;
+    width:100%;
+}
+
+#park3{
+    position: absolute;
+    right:7%;
+    top:50%;
+    height:50px;
+    width:50px;
+    animation:parkicon 2s infinite;
+}
+#park2{
+    position: absolute;
+    right:48%;
+    top:25%;
+    height:50px;
+    width:50px;
+    animation:parkicon2 3s infinite;
+}
+#park1{
+    position: absolute;
+    right:45%;
+    top:52%;
+    height:50px;
+    width:50px;
+    animation:parkicon3 3s infinite;
+}
+
+
+
+#parkingdata_table{
+    display: none;
+}
+
+table{
+
+    border-collapse: collapse;
+    width:95%;
+    float:left;
+    margin-top:20px;
+    color: #4A4848;
+   }
+table, th, td{
+    border: 1px solid greenyellow;
+}
+td,th{
+    height:5px;
+    text-align: center;
+    padding:4px;
+}
+
+tr:nth-child(even)
+{background: #FFF}
+
+tr:nth-child(odd)
+{background: #FFF}
+
+caption {
+    font-weight: bold;
+    color: whitesmoke;
+}
+#parking_index {
+    margin-left: 3px;
+    clear: both;
+    color: #4A4848;
+    background: #EDFCEA;
+    text-align: center;
+    width: 35%;
+    border-radius: 0px 0px 5px 5px;
+
+
+}
+#parking_detail{
+    padding:5px;
+    font-size: 18px;
+    margin-left: 20px;
+    font-weight: bold;
+    border-radius:5px;
+    color: whitesmoke;
+}
+#parking_detail:hover{
+    cursor: pointer;
+}
+/*.................................................walking info pop up...................................................*/
+#walking_info{
+    width:300px;
+    background: #fefefe;
+    position: fixed;
+    top:380px;
+    left:150px;
+    border-radius: 5px;
+    display: none;
+
+}
+#walking_info h3{
+    text-align: center;
+    background:#50C347;
+    padding:1px;
+    line-height:25px;
+    font-size:19px;
+    font-weight:bold;
+    margin-bottom: 15px;
+    border-radius: 5px 5px 0px  0px;
+}
+#walking_info p{
+    color:#4A4848;
+     text-align: justify;
+    padding:0px 12px;
+    font-size: 14px;
+}
+
+#walking_info span{
+    background: #B0B0B5;
+    float:left;
+    width:100%;
+    text-align: center;
+    margin-top: 10px;
+    padding:5px 0px;
+    border-radius: 0px 0px 5px 5px;
+
+}
+/***************************************biking info popup********************************************/
+
+#biking_info{
+    width:300px;
+    background: #fefefe;
+    position: fixed;
+    top:380px;
+    left:150px;
+    border-radius: 5px;
+    display: none;
+    z-index: 100;
+}
+#biking_info h3{
+    text-align: center;
+    background:#50C347;
+    padding:1px;
+    line-height:25px;
+    font-size:19px;
+    font-weight:bold;
+    margin-bottom: 15px;
+    border-radius: 5px 5px 0px  0px;
+}
+#biking_info p{
+    color:#4A4848;
+     text-align: justify;
+    padding:0px 12px;
+    font-size: 14px;
+}
+
+#biking_info span{
+    background: #B0B0B5;
+    float:left;
+    width:100%;
+    text-align: center;
+    margin-top: 10px;
+    padding:5px 0px;
+    border-radius: 0px 0px 5px 5px;
+
+}
+
+/*-----------------------------------------------------password recover-------------------------------------------------*/
+#recovery_section{
+    width:40%;
+    margin: 30px auto;
+    background:#4A4848;
+    border-radius: 5px;
+
+}
+
+#forgot_password a{
+    font-style: italic;
+    font-size: 14px;
+    color:white;
+}
+
+#forgot_password a:hover{
+    cursor: pointer;
+
+}
+
+#recover{
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+
+.forgot_head{
+    color:white;
+    padding: 5px;
+    font-size: 22px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#recover form input[type=text]{
+    height:25px;
+    margin:3px;
+    border: 1px solid white;
+    border-radius: 2px;
+    width:200px;
+    background: white;
+    padding-left:10px;
+
+}
+#recover form input[type=submit]{
+    border-radius: 2px;
+    height:28px;
+    padding:0px 15px;
+    margin:10px 0px;
+    width:210px;
+    margin-left:20px;
+    border: 1px solid #9FB6BD;
+
+}
+
+#recovery_result p{
+    color:white;
+    padding: 5px;
+    font-size: 22px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.recovery_result{
+    color:white;
+    padding: 2px;
+    font-size: 18px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.head_title{
+    text-align: center;
+    background:#879FF0;
+    padding: 2px;
+    border-radius: 2px;
+    color:white;
+}
+
+
+/*-----------------------------------------------------animation---------------------------------------------------------------*/
+
+@keyframes parkicon{
+0%{transform: scale(1.0);}
+50%{transform: scale(1.3);}
+0%{transform: scale(1.0);}
+}
+
+@keyframes parkicon2{
+0%{transform: scale(1.0);}
+30%{transform: scale(1.0);}
+50%{transform: scale(1.3);}
+70%{transform: scale(1.3);}
+0%{transform: scale(1.0);}
+}
+@keyframes parkicon3{
+ 0%{transform: scale(1.0);}
+ 50%{transform: scale(1.3);}
+ 0%{transform: scale(1.0);}
+}
