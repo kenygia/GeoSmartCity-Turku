@@ -2512,8 +2512,8 @@ if (typeof module !== undefined) module.exports = polyline;
 	L.Routing.OSRM = L.Class.extend({
 		options: {
 			// serviceUrl: 'http://hub.geosmartcity.eu/otp/routers/default/plan',
-			//	serviceUrl: 'http://gis.dc.turkuamk.fi:8080/otp/routers/default/plan',
-			serviceUrl: 'http://localhost:8080/otp/routers/default/plan',
+			serviceUrl: 'http://gis.dc.turkuamk.fi:8080/otp/routers/default/plan',
+			//serviceUrl: 'http://localhost:8080/otp/routers/default/plan',
 			timeout: 30 * 1000,
 			routingOptions: {}
 		},

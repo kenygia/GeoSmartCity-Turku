@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Southwest Finland Green Routing</title>
-<link rel="shortcut icon" type="image/png" href="favicon.png"/>
- <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="css/leaflet.css">
     <script  type="text/javascript" src="javascript/leaflet.js"></script>
 
     <script src="javascript/Control.Geocoder.js"></script>
     <script type="text/javascript" src="javascript/map_routing.js"></script>
     <script  type="text/javascript" src="javascript/jquery.min.js"></script>
 
-	<script  type="text/javascript" src="javascript/hammer.js"></script>
+	   <script  type="text/javascript" src="javascript/hammer.js"></script>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script  type="text/javascript" src="javascript/bootstrap.min.js"></script>
 
-<!--    j-Query UI-->
+    <!--    j-Query UI-->
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/jquery.timepicker.min.css">
     <script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
@@ -208,7 +208,7 @@
     <div id="mobileButtons">
         <button type="button" class="changeRoute">
         </button>
-        <button type="button"" class="hideAlternative">
+        <button type="button" class="hideAlternative">
             <div id="altArrow" class="arrow-up"></div>
         </button>
     </div>
