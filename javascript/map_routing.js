@@ -33,7 +33,7 @@ window.onload = function(){
                 //no waypoint on the initials
             ],
         routeWhileDragging:true,
-        geocoder: L.Control.Geocoder.google() // choosen geocoder, can be changed to anyone from Control.Geocoder.js
+        geocoder: L.Control.Geocoder.google("AIzaSyBXIxKmHz3QFTynyL8AMUBqQNxgS2sy8d8", "") // choosen geocoder, can be changed to anyone from Control.Geocoder.js
     }).addTo(map);
 
     // If there is an error during calculating, error div is
