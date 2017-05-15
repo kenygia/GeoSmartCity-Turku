@@ -1,5 +1,5 @@
 /*
-Licensed under the EUPL V.1.1 
+Licensed under the EUPL V.1.1
 by Benjamin D'HOOP & Guillaume KLEINPOORT & Maxence DECANTER
 */
 
@@ -8,14 +8,14 @@ by Benjamin D'HOOP & Guillaume KLEINPOORT & Maxence DECANTER
 * @param {boolean} bool
 */
 function validateComment(bool){
-	
+
     comment = createComment();
 	if(comment == undefined){                   //
 		console.log("missing argument");		// Add by DECANTER Maxence
 	}else{										//
-		tmpMarker['comment']= comment;
+		tmpMarker['comment'] = comment;
 		if(!bool){
-			mymap.removeLayer(tmpMarker);
+			map.removeLayer(tmpMarker);
 		}else{
 			addServerMarker(tmpMarker);
 			console.log(tmpMarker);
@@ -35,8 +35,8 @@ function modifyComment(bool){
     $('#comment-page').hide("slow");
 	$('#modify-comment').hide("slow");
 	if(!bool){
-		mymap.removeLayer(selectedMarker);
-        mymap.removeLayer(tmpMarker);
+		map.removeLayer(selectedMarker);
+        map.removeLayer(tmpMarker);
 	}
     selectedMarker.dragging.disable();
 	selectedMarker = "s";
@@ -52,7 +52,7 @@ var tmpComment;
 */
 function createComment(){
 	f = document.getElementsByClassName('iconContent');
-	
+
 	if(typeComment == 'information'){
 		title= $(".form-control:eq(6)").val();
 		description = $(".form-control:eq(7)").val();
@@ -74,9 +74,9 @@ function createComment(){
 	}else if(typeComment == 'other'){
 		title= $(".form-control:eq(11)").val();
 		description = $(".form-control:eq(12)").val();
-		
+
 	}
-	
+
 	if(actualTime ===1 || typeComment == 'other'){
 		date_creation = todayDate();
 		end = "1999-01-01 00:00:00";
@@ -91,7 +91,7 @@ function createComment(){
 		tmpComment = new Comment(title, description, type, date_creation, end);
 		console.log(tmpComment);
 	}
-	
+
 	return tmpComment;
 }
 
@@ -135,7 +135,7 @@ function selectIcon(evt, iconName, type){
 	tab_markers = [];
 	markersArray.clearLayers();
 	if(tmpMarker != "t")
-		tmpMarker.addTo(mymap);
+		tmpMarker.addTo(map);
 	if(type == 'viewall'){
 		displayServerComments();
 		stat();
@@ -158,7 +158,7 @@ function getThreeLastComments(addr){
 		if(addr == getFormattedAddr(tab_markers[i][0].getPopup().getContent())){
 			tab_sameAddr.push(tab_markers[i]);
 		}
-	} 
+	}
 	if(tab_sameAddr.length > 3){
 		tab_sameAddr = tab_sameAddr.slice(0,3);
 	}

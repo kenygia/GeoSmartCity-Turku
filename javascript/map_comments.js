@@ -2,8 +2,9 @@
 Licensed under the EUPL V.1.1
 by Benjamin D'HOOP & Guillaume KLEINPOORT & Maxence DECANTER
 */
+var rogue;
 
-var mymap = L.map('mapid',{
+var map = L.map('mapid',{
 	center:[60.4500, 22.2667],
 	zoom:14,
 	zoomControl:true,
@@ -11,12 +12,12 @@ var mymap = L.map('mapid',{
 	minZoom:4
 });
 
-mymap.zoomControl.setPosition('bottomright');  // Add by DECANTER Maxence
-mymap.locate({setView: true, maxZoom: 14});
+map.zoomControl.setPosition('bottomright');  // Add by DECANTER Maxence
+map.locate({setView: true, maxZoom: 14});
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mymap);
+}).addTo(map);
 
 var popup = L.popup();
 var idx_m = 0;
@@ -84,7 +85,9 @@ function onMarkerClick(e){
 	selectedMarker = e.target;
     selectedMarker.dragging.disable();
 	if(selectedMarker != tmpMarker){
-		selectedMarker.getPopup().togglePopup();
+		console.log(selectedMarker);
+		rogue = selectedMarker;
+		selectedMarker.getPopup()/*togglePopup()*/;
 		lat = e.target._latlng.lat;
 		lng = e.target._latlng.lng;
 		$(".form-control:eq(0)").val(getFormattedAddr(selectedMarker.getPopup().getContent()));			 // Add by DECANTER Maxence
@@ -106,8 +109,8 @@ function locationOfUserMarker(e){
 
 /********************** EVENTS ***************************/
 
-mymap.on('click', onMapClick);
-mymap.on('locationfound', locationOfUserMarker);
+map.on('click', onMapClick);
+map.on('locationfound', locationOfUserMarker);
 
 
 /*********************************************************/
@@ -119,5 +122,5 @@ mymap.on('locationfound', locationOfUserMarker);
 * @param {number} lon
 */
 function goTo(lat, lng){
-	mymap.setView([lat, lng], 17);
+	map.setView([lat, lng], 17);
 }

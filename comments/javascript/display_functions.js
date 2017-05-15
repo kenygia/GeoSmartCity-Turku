@@ -1,5 +1,5 @@
 /*
-Licensed under the EUPL V.1.1 
+Licensed under the EUPL V.1.1
 by Benjamin D'HOOP & Guillaume KLEINPOORT & Maxence DECANTER
 */
 
@@ -36,14 +36,14 @@ function addMarker(lat, lng, addr, iconChosen, title, d_start, description,id){
         var geocoder = new google.maps.Geocoder();																				//
 		var latlng = new google.maps.LatLng(lat, lng);																			//
 		geocoder.geocode({'latLng': latlng}, function(results, status) {														//
-		/* Si le géocodage inversé a réussi */																					// Add by DECANTER Maxence
+		/* Si le gï¿½ocodage inversï¿½ a rï¿½ussi */																					// Add by DECANTER Maxence
 		if (status == google.maps.GeocoderStatus.OK) {																			//																		//
 			marker.bindPopup(results[0].formatted_address+"<a href='#' onclick='previewComment();'> <strong>View</strong></a>").openPopup();	//
 			$(".form-control:eq(0)").val(results[0].formatted_address);															//
 		}																														//
-		});    
+		});
     }
-	markersArray.addTo(mymap);
+	markersArray.addTo(map);
 	marker.on("click", onMarkerClick);
 	return marker;
 }
@@ -138,7 +138,7 @@ function commentMainPage(addr){
 			d.append('<p><strong>Description:</strong> '+tab[i][4]+'</p>');
 			d.append('</br>');
 		}
-	} 
+	}
 }
 
 /**
@@ -155,7 +155,7 @@ function displayModifyComment(i){
 	b.append('<h5>'+tab_modify[i][2]+'</h5>')
 	var c = $('#commentTitle');
 	c.empty();
-	
+
 	c.append('<h5>'+tab_modify[i][1]+'</h5>')
 	var d = $('#comment');
 	d.empty();
@@ -215,7 +215,7 @@ function removeTmpMarkers(){
     $('#modify-comment').hide();
 	$('#add-comment').hide();
     if(tmpMarker != "t")
-        mymap.removeLayer(tmpMarker);
+        map.removeLayer(tmpMarker);
     canPlaceMarker=true;
 }
 
@@ -224,14 +224,14 @@ function removeTmpMarkers(){
 *   @param {L.marker} marker
 */
 function removeMarker(marker){
-	mymap.removeLayer(marker);
+	map.removeLayer(marker);
 }
 
 /**
 *	Removes the selectedMarker from the map
 */
 function removeCurrentMarker(){
-	mymap.removeLayer(selectedMarker);	
+	map.removeLayer(selectedMarker);
 }
 
 /**
