@@ -136,7 +136,7 @@ function commentMainPage(addr){
 			d.append('<p><strong>Mode:</strong> '+tab[i][2]+'</p>');
 			d.append('<p><strong>Created on:</strong> '+tab[i][3]+'</p>');
 			d.append('<p><strong>Description:</strong> '+tab[i][4]+'</p>');
-			d.append('</br>');
+			d.append('<hr>');
 		}
 	}
 }
@@ -205,7 +205,7 @@ function displayComment(marker){
     d.append('<p>Title: '+c.title+'</p>');
     d.append('<p>Type: '+c.type+'</p>');
     d.append('<p>Created on: '+c.date_creation+'</p>');
-    d.append('<p>Description:'+'<br/>'+c.description+'</p>');
+    d.append('<p>Description:'+'<br>'+c.description+'</p>');
 }
 
 /**
