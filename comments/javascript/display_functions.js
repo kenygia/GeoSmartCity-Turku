@@ -10,7 +10,7 @@ by Benjamin D'HOOP & Guillaume KLEINPOORT & Maxence DECANTER
 * @param {string} addr
 * @param {string} iconChosen
 */
-function addMarker(lat, lng, addr, iconChosen, title, d_start, description,id){
+function addMarker(lat, lng, addr, iconChosen, title, d_start, description,id, d_end){
     var marker;
     switch(iconChosen) {
         case "Problem":
@@ -29,16 +29,16 @@ function addMarker(lat, lng, addr, iconChosen, title, d_start, description,id){
             marker = L.marker(L.latLng(lat, lng), {icon: eventIcon}).addTo(markersArray);
     }
 	var latlng = L.latLng(lat, lng);
-	tab_markers.push([marker,title, iconChosen, d_start, description,id]);    // Modify by DECANTER Maxence
+	tab_markers.push([marker, title, iconChosen, d_start, description, id, d_end]);    // Modify by DECANTER Maxence
 	if(addr != undefined){
-        marker.bindPopup(addr+"<a href='#' onclick='multipleModifyFuns();'> <strong>View</strong></a>"); // Modify by DECANTER Maxence
+        marker.bindPopup(addr+"<a href='#' onclick='hideVisibilitySelectedMarker();'> <strong>Delete</strong></a>"); // Modify by DECANTER Maxence  multipleModifyFuns();
     }else{
         var geocoder = new google.maps.Geocoder();																				//
 		var latlng = new google.maps.LatLng(lat, lng);																			//
 		geocoder.geocode({'latLng': latlng}, function(results, status) {														//
 		/* Si le g�ocodage invers� a r�ussi */																					// Add by DECANTER Maxence
 		if (status == google.maps.GeocoderStatus.OK) {																			//																		//
-			marker.bindPopup(results[0].formatted_address+"<a href='#' onclick='previewComment();'> <strong>View</strong></a>").openPopup();	//
+			marker.bindPopup(results[0].formatted_address+"<a href='#' onclick='hideVisibilitySelectedMarker();'> <strong>Delete</strong></a>").openPopup();	// previewComment();
 			$(".form-control:eq(0)").val(results[0].formatted_address);															//
 		}																														//
 		});
@@ -71,7 +71,8 @@ function displayServerComments(){
 						lat = coord[0];
 						lon = coord[1];
 						addr = obj.position.properties.name;
-						addMarker(lat, lon, addr, capitalize(obj.category), obj.name, obj.d_start, obj.description,obj.id);
+
+						addMarker(lat, lon, addr, capitalize(obj.category), obj.name, obj.d_start, obj.description, obj.id, obj.d_end);
 					}
                 }
             });
@@ -108,7 +109,7 @@ function displayServerCommentsByCategory(cat){
 							lat = coord[0];
 							lon = coord[1];
 							addr = obj.position.properties.name;
-						addMarker(lat, lon, addr, capitalize(obj.category), obj.name, obj.d_start, obj.description,obj.id);
+						addMarker(lat, lon, addr, capitalize(obj.category), obj.name, obj.d_start, obj.description,obj.id,obj.d_end);
 						}
 					}
                 }

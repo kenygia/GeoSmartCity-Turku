@@ -74,7 +74,7 @@ function updateMarkerDatabase(){
 function changeVisibility(obj, newVisible){
 	lat = obj.position.geometry.coordinates[0];
 	lng = obj.position.geometry.coordinates[1];
-	n = obj.position.properties.name
+	n = obj.position.properties.name;
 	$.ajax({
 		url: './baguette/marker.php',
 		type: 'PUT',
@@ -87,6 +87,40 @@ function changeVisibility(obj, newVisible){
 
 }
 
+/**
+*	Change the visibility of selectedMarkerr (1 = display, 0 = not display)
+*	@param {int} newVisible
+*
+*/
+function hideVisibilitySelectedMarker(){
+  var isFind = 0;
+  var i = 0;
+  while(isFind !=1){
+    console.log(tab_markers[i][0]._latlng);
+    if(selectedMarker === tab_markers[i][0]){
+      name = tab_markers[i][1];
+      type = tab_markers[i][2];
+      d_start = tab_markers[i][3];
+      description = tab_markers[i][4];
+      id = tab_markers[i][5];
+      d_end = tab_markers[i][6];
+      isFind = 1;
+    }
+    i++;
+  }
+console.log( "id="+id+"&name="+name+"&d_start="+d_start+"&d_end="+d_end+"&description="+description+"&category="+type+"&visible="+0+"");
+	$.ajax({
+		url: './baguette/marker.php',
+		type: 'PUT',
+		dataType: 'json',
+		data: "id="+id+"&name="+name+"&d_start="+d_start+"&d_end="+d_end+"&description="+description+"&category="+type+"&visible="+0+"",
+		success: function(data) {
+				console.log('Update was performed.');
+		}
+	});
+    removeCurrentMarker();
+
+}
 /**
 *	Modify the comment data in the database
 *
