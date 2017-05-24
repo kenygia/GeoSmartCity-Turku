@@ -169,20 +169,28 @@ function stat(){
             console.log(arrayComments);
             arrayComments.forEach(function(obj){
                 //console.log(obj);
-                if(!obj.position){
-                    console.log("Problem with this marker:");
-                    console.log(obj);
+
+                if (obj.visible == 0)
+                {
+                  console.log("invisible" + obj);
                 }
-                else{
-					total += 1;
-					if(obj.category === 'event')
-						ev += 1;
-					else if(obj.category === 'information')
-						info += 1;
-					else if(obj.category === 'other')
-						other += 1;
-					else if(obj.category === 'problem')
-						problem += 1;
+                else
+                {
+                  if(!obj.position){
+                      console.log("Problem with this marker:");
+                      console.log(obj);
+                  }
+                  else{
+          					total += 1;
+          					if(obj.category === 'event')
+          						ev += 1;
+          					else if(obj.category === 'information')
+          						info += 1;
+          					else if(obj.category === 'other')
+          						other += 1;
+          					else if(obj.category === 'problem')
+          						problem += 1;
+                  }
                 }
             });
 			var d = $('#stat');
