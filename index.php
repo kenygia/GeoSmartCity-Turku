@@ -214,6 +214,6 @@
     </div>
 
     <div id="mobile-indicator"></div>
+    <script src="javascript/setup.js"> </script> 
 </body>
-
 </html>
