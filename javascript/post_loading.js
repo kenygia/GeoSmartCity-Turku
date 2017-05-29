@@ -1,5 +1,4 @@
-//$(".leaflet-routing-geocoder.input").change(function(e){console.info(e);});
-//$(".leaflet-routing-geocoder input").change(function(e){completeAddr();});
+//$(".leaflet-routing-geocoder input").change(function(e){console.info(e);});
 var inputs_geocoder = "";
 
 function completeAddr(addr)
@@ -18,7 +17,7 @@ function geocodage(e)
 
 function load_geo_inputs()
 {
-    inputs_geocoder = document.querySelectorAll(".leaflet-routing-geocoder input");
+    inputs_geocoder = $(".leaflet-routing-geocoder input") //document.querySelectorAll(".leaflet-routing-geocoder input");
 }
 
 $(window).load(function(){
