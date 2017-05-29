@@ -4,32 +4,16 @@
     <meta charset="UTF-8">
     <title>Southwest Finland Green Routing</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <!--   LeafletJS-->
     <link rel="stylesheet" href="css/leaflet.css">
-    <script  type="text/javascript" src="javascript/leaflet.js"></script>
-
-    <script src="javascript/Control.Geocoder.js"></script>
-    <script type="text/javascript" src="javascript/map_routing.js"></script>
-    <script  type="text/javascript" src="javascript/jquery.min.js"></script>
-
-	   <script  type="text/javascript" src="javascript/hammer.js"></script>
-
+    <!--    Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script  type="text/javascript" src="javascript/bootstrap.min.js"></script>
-
     <!--    j-Query UI-->
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/jquery.timepicker.min.css">
-    <script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="javascript/jquery.timepicker.min.js"></script>
-
-    <script src="javascript/lang.js"></script>
-    <script src="javascript/additionalFunctions.js"></script>
-
     <!--    CSS-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style_routing.css">
-
-    <script src="javascript/leaflet-routing-machine.js"></script>
 
 	<!--	Google Analytics-->
 	<script>
@@ -214,6 +198,21 @@
     </div>
 
     <div id="mobile-indicator"></div>
-    <script src="javascript/setup.js"> </script> 
+
+
+
+    <script  type="text/javascript" src="javascript/leaflet.js"></script>
+    <script src="javascript/Control.Geocoder.js"></script>
+    <script src="javascript/setup.js"></script>
+    <script type="text/javascript" src="javascript/map_routing.js"></script>
+    <script  type="text/javascript" src="javascript/jquery.min.js"></script>
+	<script  type="text/javascript" src="javascript/hammer.js"></script>
+    <script  type="text/javascript" src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.timepicker.min.js"></script>
+    <script src="javascript/lang.js"></script>
+    <script src="javascript/additionalFunctions.js"></script>
+    <script src="javascript/leaflet-routing-machine.js"></script>
+    <script src="javascript/post_loading.js"> </script>
 </body>
 </html>
