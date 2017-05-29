@@ -28,18 +28,11 @@ $(window).load(function(){
     console.info(inputs_geocoder);
 
     if (inputs_geocoder[0])
-        inputs_geocoder[0].addEventListener('change', function(e) {
-            console.info(e);
-            console.info(e.path[0]);
-            geocoder.geocode(inputs_geocoder[0].value, completeAddr, inputs_geocoder[0]);
-        });
+        inputs_geocoder[0].addEventListener('change', geocodage);
 
+        
     if (inputs_geocoder[1])
-        inputs_geocoder[1].addEventListener('change', function(e) {
-            console.info(e);
-            geocoder.geocode(inputs_geocoder[1].value, completeAddr, inputs_geocoder[1]);
-
-        });
+        inputs_geocoder[1].addEventListener('change', geocodage);
 
 
 });
