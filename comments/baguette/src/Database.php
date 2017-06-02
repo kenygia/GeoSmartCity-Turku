@@ -9,10 +9,10 @@ class Database
         {
             $connection = new PDO(
                 'mysql:host=localhost;
-                dbname=geoguillaume;
+                dbname=GeoSmartCityDB;
                 charset=utf8mb4',
-                'geoguillaume',
-                'L3EUUXDwC6Rczpym'
+                'UserGeoSmartCity',
+                'GeoSmartCityPassword'
             );
             $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }

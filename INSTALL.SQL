@@ -2,22 +2,22 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Utilisateur :  `geoguillaume`
+-- Create User 
 --
 
-CREATE USER 'geoguillaume'@'localhost' IDENTIFIED BY 'L3EUUXDwC6Rczpym';
+CREATE USER 'UserGeoSmartCity'@'localhost' IDENTIFIED BY 'GeoSmartCityPassword';
 
 --
--- Base de données :  `geoguillaume`
+-- Create Database and Give the User all privileges on the database
 --
-CREATE DATABASE IF NOT EXISTS `geoguillaume`;
-GRANT ALL PRIVILEGES ON `geoguillaume`.* TO 'geoguillaume'@'localhost';
-USE `geoguillaume`;
+CREATE DATABASE IF NOT EXISTS `GeoSmartCityDB`;
+GRANT ALL PRIVILEGES ON `GeoSmartCityDB`.* TO 'UserGeoSmartCity'@'localhost';
+USE `GeoSmartCityDB`;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `category`
+-- Create table `category`
 --
 
 CREATE TABLE IF NOT EXISTS `category` (
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `category` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Contenu de la table `category`
+-- Fill table `category`
 --
 
 INSERT INTO `category` (`cid`, `name`) VALUES
@@ -38,7 +38,7 @@ INSERT INTO `category` (`cid`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `marker`
+-- Create table `marker`
 --
 
 CREATE TABLE IF NOT EXISTS `marker` (
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `marker` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Structure de la table `report`
+-- Create table `report`
 --
 
 CREATE TABLE IF NOT EXISTS `report` (
