@@ -55,7 +55,7 @@ function infoPage(){
 	if(lang === "en")
 		window.location = "http://localhost/doc/?page=home&lang=en";
 	if(lang === "sv")
-		window.location = "hhttp://localhost/doc/?page=home&lang=sw";
+		window.location = "http://localhost/doc/?page=home&lang=sw";
 }
 
 
