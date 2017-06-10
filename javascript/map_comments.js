@@ -2,8 +2,6 @@
 Licensed under the EUPL V.1.1
 by Benjamin D'HOOP & Guillaume KLEINPOORT & Maxence DECANTER
 */
-var rogue;
-
 var map = L.map('mapid',{
 	center:[60.4500, 22.2667],
 	zoom:14,
@@ -86,7 +84,6 @@ function onMarkerClick(e){
     selectedMarker.dragging.disable();
 	if(selectedMarker != tmpMarker){
 		console.log(selectedMarker);
-		rogue = selectedMarker;
 		selectedMarker.getPopup()/*togglePopup()*/;
 		lat = e.target._latlng.lat;
 		lng = e.target._latlng.lng;
