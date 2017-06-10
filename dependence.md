@@ -2,43 +2,46 @@
 
 
 
-## /var/www/html/index.php ##
+## index.php ##
 ### - CDN : ###
 #### *Leaflet* : ####
-			<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css">
-			<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    		<link rel="stylesheet" href="css/leaflet.css">
+    		<script  type="text/javascript" src="javascript/leaflet.js"></script>
+			<script src="javascript/Control.Geocoder.js"></script>
+			<script src="javascript/leaflet-routing-machine.js"></script>
+    		<script type="text/javascript" src="javascript/map_routing.js"></script>
 
 #### *Jquery* : #### 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-			<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-			<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+			<script  type="text/javascript" src="javascript/jquery.min.js"></script>
+			<script type="text/javascript" src="javascript/jquery-ui.min.js"></script>
+			<script type="text/javascript" src="javascript/jquery.timepicker.min.js"></script>
+			<link rel="stylesheet" href="css/jquery-ui.css">
+			<link rel="stylesheet" href="css/jquery.timepicker.min.css">
 
 #### *Hammer* : #### 
-			<script src="http://hammerjs.github.io/dist/hammer.js"></script>
+			<script  type="text/javascript" src="javascript/hammer.js"></script>
 
 #### *Bootstrap* : #### 
-			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    		<link rel="stylesheet" href="css/bootstrap.min.css">
+			<script  type="text/javascript" src="javascript/bootstrap.min.js"></script>
 
 ### - Local : ###
 #### *CSS* : #### 
-			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/style_routing.css">
 
 #### *javascript* : #### 
-			<script src="javascript/leaflet-routing-machine.js"></script>
-			<script src="javascript/Control.Geocoder.js"></script>
+    		<script src="javascript/setup.js"></script>
 			<script src="javascript/lang.js"></script>
 			<script src="javascript/additionalFunctions.js"></script>
-			<script type="text/javascript" src="javascript/map.js"></script>
+    		<script src="javascript/post_loading.js"> </script>
 			
 #### *Images* : ####
+    		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 			<img src="css/images/info.png" alt="Info" id="infoPic">
 			<img src="css/images/comment.png" alt="Comment" id="commentPic">
 	
-## /usr/share/javascript/additionalFunctions.js ##
+## javascript/additionalFunctions.js ##
 ### - Local : ###
 #### *Images* : ####
 			return "'css/images/Walk-gray.png'";
@@ -60,28 +63,28 @@
 			return '"css/images/10trees.png"';
 			
 			
-## /usr/share/javascript/Control.Geocoder.js ##
+## javascript/Control.Geocoder.js ##
 
 
-## /usr/share/javascript/lang.js ##
+## javascript/lang.js ##
 
 
-## /usr/share/javascript/leaflet-routing-machine.js ##
+## javascript/leaflet-routing-machine.js ##
 
 
-## /usr/share/javascript/map.js ##
+## javascript/map.js ##
 
 
-## /usr/share/javascript/jquery/jquery.js ##
+## javascript/jquery/jquery.js ##
 
 
-## /usr/share/javascript/jquery/jquery.lite.js ##
+## javascript/jquery/jquery.lite.js ##
 
 
-## /usr/share/javascript/jquery/jquery.pack.js ##
+## javascript/jquery/jquery.pack.js ##
 
 
-## /usr/share/javascript/jquery/jquery.min.js ##
+## javascript/jquery/jquery.min.js ##
 
 
 
@@ -218,7 +221,7 @@
 
 # Comments #
 
-## /var/www/html/comments/index.php ##
+## comments/index.php ##
 ### - Local : ###
 ### *PHP* : ###
 			<?php include 'header.php';?>
@@ -227,7 +230,7 @@
 			<?php include 'footer.php';?>
 			
 			
-## /var/www/html/comments/header.php ##
+## comments/header.php ##
 ### - CDN : ###
 #### *Leaflet* : ####
 			<link rel="stylesheet" href="leaflet.css"/>
@@ -249,17 +252,17 @@
                 <img src="images/routicon.png" id="routingPic">
 			
 			
-## /var/www/html/comments/widgets/languageButtom.php ##
+## comments/widgets/languageButtom.php ##
 
 
-## /var/www/html/comments/modify.php ##
+## comments/modify.php ##
 ### - Local : ###
 #### *Images* : ####
                 <img class="pull-left" src="images/infoicon.png" id="infoPic">
                 <img src="images/routicon.png" id="routingPic">
 
 
-## /var/www/html/comments/footer.php ##
+## comments/footer.php ##
 ### - Local : ###
 #### *Javascript* : ####
 			<script src="javascript/map.js"></script>
@@ -274,7 +277,7 @@
 			<script src="doc/scripts/bootstrap.js"></script>
 
 			
-## /var/www/html/comments/editComment.php ##
+## comments/editComment.php ##
 ### - Local : ###
 #### *PHP* : ####
 			<?php include 'header.php'?>
@@ -283,16 +286,16 @@
 ### *Images* : ###
 			<img src="images/comment.png" id="backToCommentpic">
 			
-## /var/www/html/comments/edit.php ##
+## comments/edit.php ##
 ### - Local : ###
 ### *Images* : ###
                 <img class="pull-left" src="images/infoicon.png" id="infoPic">
 
-## /var/www/html/comments/Contol.Geocoder.js ##
+## comments/Contol.Geocoder.js ##
 
-## /var/www/html/comments/leaflet-routing-machine.js ##
+## comments/leaflet-routing-machine.js ##
 
-## /var/www/html/comments/leaflet.js ##
+## comments/leaflet.js ##
 ### - Local : ###
 ### *Images* : ###
 			var problemIcon = new LeafIcon({iconUrl: 'images/problem.png'});
@@ -300,9 +303,9 @@
 			var eventIcon = new LeafIcon({iconUrl: 'images/event.png'});
 			var otherIcon = new LeafIcon({iconUrl: 'images/other.png'});
 
-## /var/www/html/comments/javascript/additional_functions.js ##
+## comments/javascript/additional_functions.js ##
 
-## /var/www/html/comments/javascript/additionalFunctions.js ##
+## comments/javascript/additionalFunctions.js ##
 ### - Local : ###
 #### *Images* : ####
 			return "'css/images/Walk-gray.png'";
@@ -323,152 +326,152 @@
 			return '"css/images/10trees.png"';
 			return '"css/images/10trees.png"';
 			
-## /var/www/html/comments/javascript/address_functions.js ##
+## comments/javascript/address_functions.js ##
 
 
-## /var/www/html/comments/javascript/comment_functions.js ##
+## comments/javascript/comment_functions.js ##
 
 
-## /var/www/html/comments/javascript/Control.Geocoder.js ##
+## comments/javascript/Control.Geocoder.js ##
 
 
-## /var/www/html/comments/javascript/css_functions.js ##
+## comments/javascript/css_functions.js ##
 
 
-## /var/www/html/comments/javascript/databse_functions.js ##
+## comments/javascript/databse_functions.js ##
 ### - Local : ###
 #### *PHP* : ####
-			r = $.post( "/comments/baguette/marker.php", { name: com.title,
+			r = $.post( "comments/baguette/marker.php", { name: com.title,
 
 				
-## /var/www/html/comments/javascript/display_functions.js ##
+## comments/javascript/display_functions.js ##
 ### - Local : ###
 #### *PHP* : ####
-			xhttp.open("GET", '/comments/baguette/marker.php', true);
+			xhttp.open("GET", 'comments/baguette/marker.php', true);
 
 	
-## /var/www/html/comments/javascript/lang.js ##
+## comments/javascript/lang.js ##
 
 
-## /var/www/html/comments/javascript/leaflet-routing-machine.js ##
+## comments/javascript/leaflet-routing-machine.js ##
 
 
-## /var/www/html/comments/javascript/map.js ##
+## comments/javascript/map.js ##
 
 
-## /var/www/html/comments/images/all.png ##
+## comments/images/all.png ##
 
 
-## /var/www/html/comments/images/cancel.png ##
+## comments/images/cancel.png ##
 
 
-## /var/www/html/comments/images/comment.png ##
+## comments/images/comment.png ##
 
 
-## /var/www/html/comments/images/edit.png ##
+## comments/images/edit.png ##
 
 
-## /var/www/html/comments/images/event.png ##
+## comments/images/event.png ##
 
 
-## /var/www/html/comments/images/event.xcf ##
+## comments/images/event.xcf ##
 
 
-## /var/www/html/comments/images/infoicon.png ##
+## comments/images/infoicon.png ##
 
 
-## /var/www/html/comments/images/info.png ##
+## comments/images/info.png ##
 
 
-## /var/www/html/comments/images/info.xcf ##
+## comments/images/info.xcf ##
 
 
-## /var/www/html/comments/images/next.jpg ##
+## comments/images/next.jpg ##
 
 
-## /var/www/html/comments/images/next.png ##
+## comments/images/next.png ##
 
 
-## /var/www/html/comments/images/other.png ##
+## comments/images/other.png ##
 
 
-## /var/www/html/comments/images/other.xcf ##
+## comments/images/other.xcf ##
 
 
-## /var/www/html/comments/images/prev.png ##
+## comments/images/prev.png ##
 
 
-## /var/www/html/comments/images/problem.png ##
+## comments/images/problem.png ##
 
 
-## /var/www/html/comments/images/problem.xcf ##
+## comments/images/problem.xcf ##
 
 
-## /var/www/html/comments/images/remove.png ##
+## comments/images/remove.png ##
 
 
-## /var/www/html/comments/images/return_arrow.png ##
+## comments/images/return_arrow.png ##
 
 
-## /var/www/html/comments/images/routicon.png ##
+## comments/images/routicon.png ##
 
 
-## /var/www/html/comments/baguette/marker.php ##
+## comments/baguette/marker.php ##
 ### - Local : ###
 #### *PHP* : ####
 			require_once __DIR__."/vendor/autoload.php";
 
-## /var/www/html/comments/baguette/report.php ##
+## comments/baguette/report.php ##
 ### - Local : ###
 #### *PHP* : ####
 			require_once __DIR__."/vendor/autoload.php";
 
 
-## /var/www/html/comments/baguette/vendor/autoload.php ##
+## comments/baguette/vendor/autoload.php ##
 ### - Local : ###
 #### *PHP* : ####
 			require_once __DIR__ . '/composer' . '/autoload_real.php';
 
-## /var/www/html/comments/baguette/vendor/composer/autoload_classmap.php ##
+## comments/baguette/vendor/composer/autoload_classmap.php ##
 
 
-## /var/www/html/comments/baguette/vendor/composer/autoload_namespaces.php ##
+## comments/baguette/vendor/composer/autoload_namespaces.php ##
 
 
-## /var/www/html/comments/baguette/vendor/composer/autoload_psr4.php ##
+## comments/baguette/vendor/composer/autoload_psr4.php ##
 
 
-## /var/www/html/comments/baguette/vendor/composer/autoload_real.php ##
+## comments/baguette/vendor/composer/autoload_real.php ##
 
 
-## /var/www/html/comments/baguette/vendor/composer/ClassLoader.php ##
+## comments/baguette/vendor/composer/ClassLoader.php ##
 
 
-## /var/www/html/comments/baguette/src/Database.php ##
+## comments/baguette/src/Database.php ##
 
 
-## /var/www/html/comments/baguette/src/Tables/MarkerTable.php ##
+## comments/baguette/src/Tables/MarkerTable.php ##
 
 
-## /var/www/html/comments/baguette/src/Tables/ReportTable.php ##
+## comments/baguette/src/Tables/ReportTable.php ##
 
 
-## /var/www/html/comments/baguette/src/Pages/Marker.php ##
+## comments/baguette/src/Pages/Marker.php ##
 
 
-## /var/www/html/comments/baguette/src/Pages/Page.php ##
+## comments/baguette/src/Pages/Page.php ##
 
 
-## /var/www/html/comments/baguette/src/Pages/Report.php ##
+## comments/baguette/src/Pages/Report.php ##
 
 
-## /var/www/html/comments/baguette/src/Models/AbstractModel.php ##
+## comments/baguette/src/Models/AbstractModel.php ##
 
 
-## /var/www/html/comments/baguette/src/Models/MarlerModel.php ##
+## comments/baguette/src/Models/MarlerModel.php ##
 
 
-## /var/www/html/comments/baguette/src/Models/ReportModel.php ##
+## comments/baguette/src/Models/ReportModel.php ##
 
 
 
