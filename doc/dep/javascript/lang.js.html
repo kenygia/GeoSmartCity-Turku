@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> lang.js </title>
+    </head>
+    <body>
+        <div class="function" name"setRoutingLanguage">
+            <h2> setRoutingLanguage </h2>
+            <div class="function-doc">
+                <div class="function-doc-text">
+                    Function called from LRM and sets the language properties
+                    for the instructions displayed after building the route.
+                </div>
+                <div class="function-doc-params">
+
+                </div>
+                <div class="function-doc-return">
+                    @returns {String} the language options: en; sv; fi(by default)
+                </div>
+            </div>
+            <div class="function-line">
+                33
+            </div>
+            <div class="function-depend">
+                <div class="function-depend-file">
+                        
+                </div>
+                <div class="function-depend-library">
+                        
+                </div>
+                <div class="function-depend-function">
+                        
+                </div>
+            </div>
+        </div>   
+        <div class="function" name"infoPage">
+            <h2> infoPage </h2>
+            <div class="function-doc">
+                <div class="function-doc-text">
+                    Function called from index.php when info icon is clicked.
+                    Function opens info site with proper language
+                </div>
+                <div class="function-doc-params">
+
+                </div>
+                <div class="function-doc-return">
+
+                </div>
+            </div>
+            <div class="function-line">
+                    50
+            </div>
+            <div class="function-depend">
+                <div class="function-depend-file">
+                        
+                </div>
+                <div class="function-depend-library">
+                        
+                </div>
+                <div class="function-depend-function">
+                        <code>
+                            var lang = setRoutingLanguage();
+                        </code>
+                </div>
+            </div>
+        </div>   
+        <div class="function" name"checkUnnamedStreets">
+            <h2> checkUnnamedStreets </h2>
+            <div class="function-doc">
+                <div class="function-doc-text">
+                    Checks if instructions contains unnamed street names
+                    If so, it replaces english version with finish or swedish
+                </div>
+                <div class="function-doc-params">
+                    @param road
+                </div>
+                <div class="function-doc-return">
+                    @returns {String} language alternative of road name
+                </div>
+            </div>
+            <div class="function-line">
+                233
+            </div>
+            <div class="function-depend">
+                <div class="function-depend-file">
+                        
+                </div>
+                <div class="function-depend-library">
+                        
+                </div>
+                <div class="function-depend-function">
+                        
+                </div>
+            </div>
+        </div>   
+        
+    </body>
+</html>
