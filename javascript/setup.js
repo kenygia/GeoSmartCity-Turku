@@ -1,1 +1,1 @@
-var geocoder = L.Control.Geocoder.google("AIzaSyC3NvIbq1glHZzP0aMc9x3zl2NFew6cjmg", "") ;
+var geocoder = L.Control.Geocoder.google("GOOGLE_API_KEY_PASS", "");

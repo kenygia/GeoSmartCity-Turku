@@ -234,14 +234,14 @@
 ### - CDN : ###
 #### *Leaflet* : ####
 			<link rel="stylesheet" href="leaflet.css"/>
-			<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.css" />
-			<script src="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.js"></script>
+			<link rel="stylesheet" href="../javascript/leaflet.css" />
+			<script src="../javascript/leaflet.js"></script>
 
 #### *Bootstrap* : ####
-			<link rel="stylesheet" href="doc/styles/bootstrap.css">
+			<link rel="stylesheet" href="../css/bootstrap.css">
 
 #### *JQuery* : ####
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+			<script src="../javascript/jquery.min.js"></script>
 
 #### *Google Maps API* : ####
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBXIxKmHz3QFTynyL8AMUBqQNxgS2sy8d8"></script>
@@ -265,7 +265,7 @@
 ## comments/footer.php ##
 ### - Local : ###
 #### *Javascript* : ####
-			<script src="javascript/map.js"></script>
+			<script src="../javascript/map_comment.js"></script>
 			<script src="javascript/display_functions.js"></script>
 			<script src="javascript/comment_functions.js"></script>
 			<script src="javascript/database_functions.js"></script>
@@ -274,7 +274,7 @@
 			<script src="javascript/css_functions.js"></script>
 
 #### *Bootstrap* : ####
-			<script src="doc/scripts/bootstrap.js"></script>
+			<script src="../javascript/bootstrap.js"></script>
 
 			
 ## comments/editComment.php ##
@@ -284,12 +284,12 @@
 			<?php include 'footer.php';?>
 			
 ### *Images* : ###
-			<img src="images/comment.png" id="backToCommentpic">
+			<img src="../css/images/comment.png" id="backToCommentpic">
 			
 ## comments/edit.php ##
 ### - Local : ###
 ### *Images* : ###
-                <img class="pull-left" src="images/infoicon.png" id="infoPic">
+                <img class="pull-left" src="../css/images/infoicon.png" id="infoPic">
 
 ## comments/Contol.Geocoder.js ##
 
@@ -298,33 +298,12 @@
 ## comments/leaflet.js ##
 ### - Local : ###
 ### *Images* : ###
-			var problemIcon = new LeafIcon({iconUrl: 'images/problem.png'});
-			var infoIcon = new LeafIcon({iconUrl: 'images/info.png'});
-			var eventIcon = new LeafIcon({iconUrl: 'images/event.png'});
-			var otherIcon = new LeafIcon({iconUrl: 'images/other.png'});
+			var problemIcon = new LeafIcon({iconUrl: '../css/images/problem.png'});
+			var infoIcon = new LeafIcon({iconUrl: '../css/images/info.png'});
+			var eventIcon = new LeafIcon({iconUrl: '../css/images/event.png'});
+			var otherIcon = new LeafIcon({iconUrl: '../css/images/other.png'});
 
 ## comments/javascript/additional_functions.js ##
-
-## comments/javascript/additionalFunctions.js ##
-### - Local : ###
-#### *Images* : ####
-			return "'css/images/Walk-gray.png'";
-			return "'css/images/Car-gray.png'";
-			return "'css/images/Biking-gray.png'";
-			return "'css/images/Bus-gray.png'";
-			return "'css/images/PPlusBus-gray.png'";
-			return '"css/images/smile.png"';
-			return '"css/images/1tree.png"';
-			return '"css/images/2trees.png"';
-			return '"css/images/3trees.png"';
-			return '"css/images/4trees.png"';
-			return '"css/images/5trees.png"';
-			return '"css/images/6trees.png"';
-			return '"css/images/7trees.png"';
-			return '"css/images/8trees.png"';
-			return '"css/images/9trees.png"';
-			return '"css/images/10trees.png"';
-			return '"css/images/10trees.png"';
 			
 ## comments/javascript/address_functions.js ##
 
@@ -341,13 +320,13 @@
 ## comments/javascript/databse_functions.js ##
 ### - Local : ###
 #### *PHP* : ####
-			r = $.post( "comments/baguette/marker.php", { name: com.title,
+			r = $.post( "./baguette/marker.php", { name: com.title,
 
 				
 ## comments/javascript/display_functions.js ##
 ### - Local : ###
 #### *PHP* : ####
-			xhttp.open("GET", 'comments/baguette/marker.php', true);
+			xhttp.open("GET", './baguette/marker.php', true);
 
 	
 ## comments/javascript/lang.js ##

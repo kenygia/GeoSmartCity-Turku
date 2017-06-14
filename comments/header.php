@@ -14,6 +14,6 @@
     <!-- Loading JQuery -->
     <script src="../javascript/jquery.min.js"></script>
     <!-- Load Google Geocoder-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3NvIbq1glHZzP0aMc9x3zl2NFew6cjmg"></script> <!-- sensor=false& oldkey=AIzaSyBXIxKmHz3QFTynyL8AMUBqQNxgS2sy8d8-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY_PASS"></script> <!-- sensor=false& -->
 </head>
 <body>
