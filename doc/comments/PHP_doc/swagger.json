@@ -4,11 +4,11 @@
         "title": "GeoSmartCity Map API",
         "version": "1.0.0"
     },
-    "host": "gis.dc.turkuamk.fi",
+    "host": "localhost",
     "schemes": [
         "http"
     ],
-    "basePath": "/guillaume.kleinpoort/baguette",
+    "basePath": "/comments/baguette/",
     "produces": [
         "application/json"
     ],

@@ -4278,7 +4278,7 @@ var Operation = module.exports = function (parent, scheme, operationId, httpMeth
     this.responseInterceptor = parent.options.responseInterceptor || null;
   }
   this.authorizations = args.security;
-  this.basePath = parent.basePath || '/';
+  this.basePath = "/" + document.location.href.split("/")[3] + parent.basePath || '/';
   this.clientAuthorizations = clientAuthorizations;
   this.consumes = args.consumes || parent.consumes || ['application/json'];
   this.produces = args.produces || parent.produces || ['application/json'];
