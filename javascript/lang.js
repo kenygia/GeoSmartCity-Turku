@@ -48,14 +48,7 @@ function setRoutingLanguage(){
  * Function opens info site with proper language
  */
 function infoPage(){
-	var lang = setRoutingLanguage();
-
-	if(lang === "fi")
-		window.location = "http://localhost/doc/?page=home&lang=fi";
-	if(lang === "en")
-		window.location = "http://localhost/doc/?page=home&lang=en";
-	if(lang === "sv")
-		window.location = "http://localhost/doc/?page=home&lang=sw";
+	window.location = "http://localhost/"+document.location.href.split("/")[3] +"/doc/";
 }
 
 

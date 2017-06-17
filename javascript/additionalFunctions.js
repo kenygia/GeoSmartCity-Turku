@@ -6,7 +6,9 @@
 var selectedMode = 'WALK';
 
 var screenWidth = $(window).width();
-
+/*
+ * DocumentReady()
+ */
 $(document).ready(function () {
     // Setting up datePicker plugin
     $("#dateId").datepicker({
